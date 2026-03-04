@@ -1,12 +1,13 @@
-# Roblox-games-
-<! Roblox games l>
+<!GET YOUR FREE GAMES l>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Complete Offer and Get Your Game</title>
+  <title>ManyMods - Premium Modded Apps Collection</title>
+
+  <!-- External CSS -->
   <style>
-    /* Basic Reset */
+    /* Global styles */
     * {
       margin: 0;
       padding: 0;
@@ -15,115 +16,206 @@
 
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: #121212;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Header Section */
+    .header {
+      background-color: #1e1e1e;
+      padding: 40px;
       text-align: center;
     }
 
-    .container {
-      width: 80%;
-      margin: 0 auto;
+    .header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+    }
+
+    /* Featured Mods Section */
+    .featured-mods {
+      background-color: #2c2c2c;
+      padding: 40px 0;
+    }
+
+    .featured-mods h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .mod-cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .mod-card {
+      background-color: #3b3b3b;
       padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      width: 200px;
     }
 
-    header {
-      margin-top: 40px;
+    .mod-card img {
+      width: 100%;
+      border-radius: 10px;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      color: #1e90ff;
+    .mod-card p {
+      margin-top: 10px;
     }
 
-    p {
+    .mod-card span {
+      display: block;
+      margin-top: 5px;
+      color: #ffd700;
+    }
+
+    /* Limited Time Offer Section */
+    .limited-time-offer {
+      background-color: #ff6f61;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    .limited-time-offer h2 {
+      font-size: 2rem;
+    }
+
+    .limited-time-offer p {
       font-size: 1.2rem;
       margin-top: 10px;
     }
 
-    .cta-section {
-      margin-top: 50px;
+    .countdown {
+      margin-top: 20px;
+      font-size: 2rem;
+      font-weight: bold;
     }
 
-    .cta-btn {
+    /* Download Section */
+    .download-section {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .download-btn {
       background-color: #28a745;
       color: white;
       padding: 15px 30px;
       font-size: 1.5rem;
-      text-decoration: none;
+      border: none;
       border-radius: 5px;
-      transition: background-color 0.3s;
+      cursor: pointer;
     }
 
-    .cta-btn:hover {
+    .download-btn:hover {
       background-color: #218838;
     }
 
-    .game-links {
-      margin-top: 60px;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      color: #333;
-    }
-
-    .links {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
-    }
-
-    .store-link img {
-      width: 200px;
-      height: auto;
-      transition: transform 0.3s;
-    }
-
-    .store-link img:hover {
-      transform: scale(1.1);
-    }
-
-    footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #666;
+    /* Footer Section */
+    .footer {
+      background-color: #2c2c2c;
+      padding: 20px;
+      text-align: center;
     }
   </style>
+
+  <!-- External JS -->
+  <script>
+    // Countdown Timer Functionality
+    function updateCountdown() {
+      const timerElement = document.getElementById('countdown-timer');
+      let countdown = timerElement.innerText.split(":");
+      let hours = parseInt(countdown[0]);
+      let minutes = parseInt(countdown[1]);
+      let seconds = parseInt(countdown[2]);
+
+      if (seconds > 0) {
+        seconds--;
+      } else if (minutes > 0) {
+        minutes--;
+        seconds = 59;
+      } else if (hours > 0) {
+        hours--;
+        minutes = 59;
+        seconds = 59;
+      }
+
+      timerElement.innerText = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+
+    // Update the countdown every second
+    setInterval(updateCountdown, 1000);
+  </script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Download Your Game Now!</h1>
-      <p>Click below to complete a quick offer and get the game you want.</p>
-    </header>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <h1>ManyMods</h1>
+      <p>Premium modded apps collection</p>
+    </div>
+  </header>
 
-    <section class="cta-section">
-      <a href="https://singingfiles.com/1879651/" class="cta-btn" target="_blank">Complete Offer & Get Your Game</a>
-    </section>
-
-    <section class="game-links">
-      <h2>After completing the offer, download your game:</h2>
-      <div class="links">
-        <a href="https://play.google.com/store/apps/details?id=com.example.game" class="store-link" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Google_Play_Store_logo_2015.svg" alt="Download on Play Store">
-        </a>
-        <a href="https://apps.apple.com/us/app/example-game/id123456789" class="store-link" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Apple_Store_icon.png" alt="Download on App Store">
-        </a>
+  <!-- Featured Mods Section -->
+  <section class="featured-mods">
+    <div class="container">
+      <h2>Featured Mods</h2>
+      <div class="mod-cards">
+        <!-- Mod 1 -->
+        <div class="mod-card">
+          <img src="https://via.placeholder.com/150" alt="Red Dead Redemption">
+          <p>Red Dead Redemption</p>
+          <span>4.9 <i class="fas fa-star"></i></span>
+        </div>
+        <!-- Mod 2 -->
+        <div class="mod-card">
+          <img src="https://via.placeholder.com/150" alt="GTA 5 Mobile">
+          <p>GTA 5 Mobile</p>
+          <span>4.7 <i class="fas fa-star"></i></span>
+        </div>
+        <!-- Mod 3 -->
+        <div class="mod-card">
+          <img src="https://via.placeholder.com/150" alt="FC Mobile">
+          <p>FC Mobile 25</p>
+          <span>4.9 <i class="fas fa-star"></i></span>
+        </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2026 Your Company. All rights reserved.</p>
+  <!-- Limited Time Offer Section -->
+  <section class="limited-time-offer">
+    <div class="container">
+      <h2>Limited Time Offer!</h2>
+      <p>Get exclusive mod packs for free - Offer ends soon!</p>
+      <div class="countdown">
+        <span id="countdown-timer">23:59:59</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Button -->
+  <section class="download-section">
+    <div class="container">
+      <h2>Download Your Favorite Mods Now!</h2>
+      <button class="download-btn">Download Now</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 ManyMods. All rights reserved.</p>
+    </div>
   </footer>
-
-  <script>
-    // JavaScript to handle user interaction if needed (for example, alerts, etc.)
-    document.querySelector('.cta-btn').addEventListener('click', function() {
-      alert('You are being redirected to complete an offer!');
-    });
-  </script>
 </body>
 </html>
